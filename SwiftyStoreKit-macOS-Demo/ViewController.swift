@@ -39,7 +39,7 @@ enum RegisteredPurchase: String {
 
 class ViewController: NSViewController {
 
-    let appBundleId = "com.musevisions.MacOS.SwiftyStoreKitDemo"
+    let appBundleId = "com.hx.HXFindFiles"
 
     let purchase1Suffix = RegisteredPurchase.purchase1
     let purchase2Suffix = RegisteredPurchase.autoRenewablePurchase
@@ -67,7 +67,7 @@ class ViewController: NSViewController {
 
     func getInfo(_ purchase: RegisteredPurchase) {
 
-        SwiftyStoreKit.retrieveProductsInfo([appBundleId + "." + purchase.rawValue]) { result in
+        SwiftyStoreKit.retrieveProductsInfo([appBundleId + "." + "purchase1"]) { result in
 
             self.showAlert(self.alertForProductRetrievalInfo(result))
         }
@@ -208,6 +208,8 @@ extension ViewController {
             default:
                 return alertWithTitle("Purchase failed", message: (error as NSError).localizedDescription)
             }
+        default:
+            return nil
         }
     }
 

@@ -248,6 +248,7 @@
 		65F7DF811DCD4FC500835D30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65F7DF821DCD4FC500835D30 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65F7DF831DCD4FC500835D30 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		840CB83E2C3CF8A50004C110 /* Product.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Product.storekit; sourceTree = "<group>"; };
 		A61BF4DD2481F4970017D9BC /* SwiftyStoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyStoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D74BBB1C24CEC90071AD3E /* SwiftyStoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyStoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4FD3A011C2954C10035CFF3 /* SwiftyStoreKit_macOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyStoreKit_macOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -320,6 +321,7 @@
 		6502F5F51B985833004E342D = {
 			isa = PBXGroup;
 			children = (
+				840CB83E2C3CF8A50004C110 /* Product.storekit */,
 				6502F6001B985833004E342D /* SwiftyStoreKit */,
 				65F7DF671DCD4DF000835D30 /* SwiftyStoreKit-iOS-Demo */,
 				65F7DF7D1DCD4FC500835D30 /* SwiftyStoreKit-macOS-Demo */,
@@ -1478,7 +1480,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftyStoreKit-macOS-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.musevisions.OSX.SwiftyStoreDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hx.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -1494,7 +1496,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftyStoreKit-macOS-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.musevisions.OSX.SwiftyStoreDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hx.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
